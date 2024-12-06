@@ -1,0 +1,954 @@
+{
+  "info": {
+    "_postman_id": "ae145b31-be99-412b-a14f-7da383682ca1",
+    "name": "Api Collector",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "34374529",
+    "_collection_link": "https://isoft5.postman.co/workspace/a79bc563-e6c1-4e8a-92a3-c8ede3b15bff/collection/34316758-ae145b31-be99-412b-a14f-7da383682ca1?action=share&source=collection_link&creator=34374529"
+  },
+  "item": [
+    {
+      "name": "Ticket",
+      "item": [
+        {
+          "name": "https://localhost:44326/api/Ticket",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{  \"ticketType\": \"Sinema\", \"price\": 500.00, \"availability\": true, \"seatNo\": 8 }",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://localhost:44326/api/Ticket",
+              "protocol": "https",
+              "host": ["localhost"],
+              "port": "44326",
+              "path": ["api", "Ticket"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "https://localhost:44326/api/Ticket/1",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://localhost:44326/api/Ticket/3",
+              "protocol": "https",
+              "host": ["localhost"],
+              "port": "44326",
+              "path": ["api", "Ticket", "3"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "https://localhost:44326/api/Ticket/3",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{  \"ticketType\": \"Tiyatro\" } ",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://localhost:44326/api/Ticket/3",
+              "protocol": "https",
+              "host": ["localhost"],
+              "port": "44326",
+              "path": ["api", "Ticket", "3"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "https://localhost:44326/api/Ticket",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://localhost:44326/api/Ticket",
+              "protocol": "https",
+              "host": ["localhost"],
+              "port": "44326",
+              "path": ["api", "Ticket"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "https://localhost:44326/api/Ticket/3",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{  \"ticketType\": \"Tiyatro\", \"price\": 500.00, \"availability\": true, \"seatNo\": 8 }",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://localhost:44326/api/Ticket/3",
+              "protocol": "https",
+              "host": ["localhost"],
+              "port": "44326",
+              "path": ["api", "Ticket", "3"]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Event",
+      "item": [
+        {
+          "name": "New Request",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "Name",
+                  "value": "Mert Demir",
+                  "type": "text"
+                },
+                {
+                  "key": "Address",
+                  "value": "İstanbul",
+                  "type": "text"
+                },
+                {
+                  "key": "DetailedDescription",
+                  "value": "Harbiye",
+                  "type": "text"
+                },
+                {
+                  "key": "Images",
+                  "type": "file",
+                  "src": "/C:/Users/is-user5/Desktop/Mert Demir.jpg"
+                }
+              ]
+            },
+            "url": {
+              "raw": "https://localhost:44326/api/Event",
+              "protocol": "https",
+              "host": ["localhost"],
+              "port": "44326",
+              "path": ["api", "Event"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "https://localhost:44326/api/Event",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": " {\"id\": 2, \"name\": \"Mert Demir\", \"detailedDescription\": \"Harbiye\", \"address\": \"İstanbul\", \"googleMapLink\": null }",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://localhost:44326/api/Event",
+              "protocol": "https",
+              "host": ["localhost"],
+              "port": "44326",
+              "path": ["api", "Event"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "https://localhost:44326/api/Event/2",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"id\": 2 }",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://localhost:44326/api/Event/2",
+              "protocol": "https",
+              "host": ["localhost"],
+              "port": "44326",
+              "path": ["api", "Event", "2"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "https://localhost:44326/api/Event/2",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": " {\"id\": 2, \"name\": \"Mert Demir 2\", \"detailedDescription\": \"Harbiye\", \"address\": \"İstanbul\", \"googleMapLink\": null }",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://localhost:44326/api/Event/2",
+              "protocol": "https",
+              "host": ["localhost"],
+              "port": "44326",
+              "path": ["api", "Event", "2"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "https://localhost:44326/api/Event/2",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": " {\"id\": 2, \"name\": \"Mert Demir\", \"detailedDescription\": \"Harbiye\", \"address\": \"İstanbul\", \"googleMapLink\": null }",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://localhost:44326/api/Event/2",
+              "protocol": "https",
+              "host": ["localhost"],
+              "port": "44326",
+              "path": ["api", "Event", "2"]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Customer",
+      "item": [
+        {
+          "name": "https://localhost:44326/api/Customer",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"customerName\": \"Sabri\", \"email\": \"Şen\", \"address\": \"Beykoz\", \"phone\": \"5456806368\" }",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://localhost:44326/api/Customer",
+              "protocol": "https",
+              "host": ["localhost"],
+              "port": "44326",
+              "path": ["api", "Customer"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "https://localhost:44326/api/Customer",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{  \"customerName\": \"Sabri\", \"email\": \"Şen\", \"phone\": \"5456806368\", \"address\": \"Beykoz\"   }",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://localhost:44326/api/Customer",
+              "protocol": "https",
+              "host": ["localhost"],
+              "port": "44326",
+              "path": ["api", "Customer"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "https://localhost:44326/api/Customer/3",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{  \"customerName\": \"Sabri\", \"email\": \"Şen\", \"phone\": \"5456806368\", \"address\": \"Beykoz\"   }",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://localhost:44326/api/Customer/3",
+              "protocol": "https",
+              "host": ["localhost"],
+              "port": "44326",
+              "path": ["api", "Customer", "3"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "https://localhost:44326/api/Customer/3",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "     {\"customerName\": \"Sabri\", \"email\": \"Sabri.sen@gmail.com\", \"phone\": \"5456806368\", \"address\": \"Beykoz\" }        ",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://localhost:44326/api/Customer/3",
+              "protocol": "https",
+              "host": ["localhost"],
+              "port": "44326",
+              "path": ["api", "Customer", "3"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "New Request",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{  \"customerName\": \"Sabri\", \"email\": \"Şen\", \"phone\": \"5456806368\", \"address\": \"Beykoz\"   }",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://localhost:44326/api/Customer/4",
+              "protocol": "https",
+              "host": ["localhost"],
+              "port": "44326",
+              "path": ["api", "Customer", "4"]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "City",
+      "item": [
+        {
+          "name": "https://localhost:44326/api/City",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"name\": \"İstanbul\" }",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://localhost:44326/api/City",
+              "protocol": "https",
+              "host": ["localhost"],
+              "port": "44326",
+              "path": ["api", "City"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "https://localhost:44326/api/City",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{  \"name\": \"İstanbul\" }",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://localhost:44326/api/City",
+              "protocol": "https",
+              "host": ["localhost"],
+              "port": "44326",
+              "path": ["api", "City"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "https://localhost:44326/api/City/2",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://localhost:44326/api/City/2",
+              "protocol": "https",
+              "host": ["localhost"],
+              "port": "44326",
+              "path": ["api", "City", "2"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "https://localhost:44326/api/City/2",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{  \"name\": \"İzmir\" }",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://localhost:44326/api/City/2",
+              "protocol": "https",
+              "host": ["localhost"],
+              "port": "44326",
+              "path": ["api", "City", "2"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "https://localhost:44326/api/City/1",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{  \"name\": \"İzmir\" }",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://localhost:44326/api/City/1",
+              "protocol": "https",
+              "host": ["localhost"],
+              "port": "44326",
+              "path": ["api", "City", "1"]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Category",
+      "item": [
+        {
+          "name": "https://localhost:44326/api/Category",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJtZWxpaXNhYWRlbWlyQGdtYWlsLmNvbSIsImV4cCI6MTcxOTU2Mzk3NiwiaXNzIjoibWVsaWlzYWFkZW1pckBnbWFpbC5jb20iLCJhdWQiOiJtZWxpc2EuZGVtaXJAZ21haWwuY29tIn0.HEhHmildYcKlN_HGPc1MHVuRTJ1oCa7oIrHouerxBGk",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"name\": \"Ata\" }",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://localhost:44326/api/Category",
+              "protocol": "https",
+              "host": ["localhost"],
+              "port": "44326",
+              "path": ["api", "Category"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "https://localhost:44326/api/Category",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"name\": \"Ata\" }",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://localhost:44326/api/Category",
+              "protocol": "https",
+              "host": ["localhost"],
+              "port": "44326",
+              "path": ["api", "Category"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "https://localhost:44326/api/Category/1",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"name\": \"Ata\" }",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://localhost:44326/api/Category/1",
+              "protocol": "https",
+              "host": ["localhost"],
+              "port": "44326",
+              "path": ["api", "Category", "1"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "https://localhost:44326/api/Category/1",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"name\": \"Emre\" }",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://localhost:44326/api/Category/1",
+              "protocol": "https",
+              "host": ["localhost"],
+              "port": "44326",
+              "path": ["api", "Category", "1"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "https://localhost:44326/api/Category/1",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"name\": \"Emre\" }",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://localhost:44326/api/Category/1",
+              "protocol": "https",
+              "host": ["localhost"],
+              "port": "44326",
+              "path": ["api", "Category", "1"]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Artist",
+      "item": [
+        {
+          "name": "https://localhost:44326/api/Artist",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"artistName\": \"Zeynep Bastık\" }",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://localhost:44326/api/Artist",
+              "protocol": "https",
+              "host": ["localhost"],
+              "port": "44326",
+              "path": ["api", "Artist"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "https://localhost:44326/api/Artist",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"artistName\": \"Zeynep Bastık\" }",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://localhost:44326/api/Artist",
+              "protocol": "https",
+              "host": ["localhost"],
+              "port": "44326",
+              "path": ["api", "Artist"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "https://localhost:44326/api/Artist/3",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://localhost:44326/api/Artist/3",
+              "protocol": "https",
+              "host": ["localhost"],
+              "port": "44326",
+              "path": ["api", "Artist", "3"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "https://localhost:44326/api/Artist/3",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{ \"artistName\": \"Zeynep Bastık 2 \" }",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://localhost:44326/api/Artist/3",
+              "protocol": "https",
+              "host": ["localhost"],
+              "port": "44326",
+              "path": ["api", "Artist", "3"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "https://localhost:44326/api/Artist/3",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"artistName\": \"Zeynep Bastık\" }",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://localhost:44326/api/Artist/3",
+              "protocol": "https",
+              "host": ["localhost"],
+              "port": "44326",
+              "path": ["api", "Artist", "3"]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Veneu",
+      "item": [
+        {
+          "name": "https://localhost:44326/api/Venue",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"venueName\": \"Atatürk Stadyum\", \"location\": \"İstanbul\", \"capacity\": 8000 }",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://localhost:44326/api/Venue",
+              "protocol": "https",
+              "host": ["localhost"],
+              "port": "44326",
+              "path": ["api", "Venue"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "https://localhost:44326/api/Venue",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"venueName\": \"Atatürk Stadyum\", \"location\": \"İstanbul\", \"capacity\": 8000 }",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://localhost:44326/api/Venue",
+              "protocol": "https",
+              "host": ["localhost"],
+              "port": "44326",
+              "path": ["api", "Venue"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "https://localhost:44326/api/Venue/1",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://localhost:44326/api/Venue/1",
+              "protocol": "https",
+              "host": ["localhost"],
+              "port": "44326",
+              "path": ["api", "Venue", "1"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "https://localhost:44326/api/Venue/1",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"venueName\": \"BTCTürk\", \"location\": \"İstanbul\", \"capacity\": 8000 }",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://localhost:44326/api/Venue/1",
+              "protocol": "https",
+              "host": ["localhost"],
+              "port": "44326",
+              "path": ["api", "Venue", "1"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "https://localhost:44326/api/Venue/1",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"venueName\": \"BTCTürk\", \"location\": \"İstanbul\", \"capacity\": 8000 }",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://localhost:44326/api/Venue/1",
+              "protocol": "https",
+              "host": ["localhost"],
+              "port": "44326",
+              "path": ["api", "Venue", "1"]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}
